@@ -100,7 +100,7 @@ public int availableAmount(int productToBuy, int amountToBuy){
 
     public double getPriceOfSelectedProduct(int productToBuy, int amountToBuy){
         Product selectedProduct = products.get(productToBuy);
-        double totalPrice = selectedProduct.price* (1+selectedProduct.sale/100)*amountToBuy;
+        double totalPrice = selectedProduct.price* (1-selectedProduct.sale/100)*amountToBuy;
         return totalPrice;
     }
 
